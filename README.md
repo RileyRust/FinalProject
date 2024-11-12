@@ -15,26 +15,24 @@ for the hard parts I think I am gonna use javascipt toolchain, a styling framewo
 and maybe a static site generator but I am not sure how I would meet these requirements to be honest I am just choosing three from the list that equal 25, if there are some better that I could use I would appreciate the assistance.
 
 part 1 
-
-
+do all of css mastery and html mastery
 
 
 part 2 
-
-
+do the sending of data to the api
 
 
 part3 
-
+reading the api
 
 
 
 part 4
-
+setting up the keys for librarian and user
 
 
 part 5 
-
+takipng the 
 
 
 part 6 

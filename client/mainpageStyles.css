@@ -1,0 +1,48 @@
+:root{
+    --backgroundcolor: rgb(189, 26, 59);
+    --titlebackgroundcolor: rgb(4, 4, 182); 
+}
+
+
+body{
+    margin: 0;
+    display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--backgroundcolor); 
+  font-size: xx-large;
+
+
+}
+
+
+#titleElement{
+background-color: var(--titlebackgroundcolor);
+padding: 2em;
+align-self: center;
+text-align: center;
+width: 100%;
+}
+
+#InputElement{
+  margin-top: 20%;
+  align-self: center;
+  text-align: center;
+}
+#userForm{
+  background-color: var(--titlebackgroundcolor);
+  display: flex;
+  flex-direction: column; 
+  padding: 2em;
+  border-radius: 1rem;
+  border-width: 0.1em;
+  border-style: solid;
+
+}
+#availableusers{
+  margin-top: 5em;
+  text-align: center;
+  background-color: var(--titlebackgroundcolor);
+  width: 75%;
+  align-self: center;
+}

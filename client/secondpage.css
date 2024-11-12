@@ -1,0 +1,39 @@
+:root{
+    --backgroundcolor: rgb(189, 26, 59);
+    --titlebackgroundcolor: rgb(4, 4, 182); 
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--backgroundcolor);
+  font-size: xx-large;
+}
+#titleElement {
+  background-color: var(--titlebackgroundcolor);
+  padding: 2em;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+}
+
+#checkOutElement{
+    font-size: large;
+    padding: 2em;
+    align-self: center;
+    text-align: center;
+    background-color: var(--titlebackgroundcolor);
+    margin-top: 5em;
+    width: 75%;
+}
+
+#avaialableBooksElement{
+    margin-top: 5em;
+    padding: 2em;
+    font-size: large;
+    align-self: center;
+    text-align: center;
+    background-color: var(--titlebackgroundcolor);
+    width: 75%;
+}
