@@ -14,3 +14,27 @@ I am not sure how I would use these javascript requiements and I would like some
 for the hard parts I think I am gonna use javascipt toolchain, a styling framework 
 and maybe a static site generator but I am not sure how I would meet these requirements to be honest I am just choosing three from the list that equal 25, if there are some better that I could use I would appreciate the assistance.
 
+part 1 
+
+
+
+
+part 2 
+
+
+
+
+part3 
+
+
+
+
+part 4
+
+
+
+part 5 
+
+
+
+part 6 
