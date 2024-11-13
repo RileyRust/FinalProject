@@ -3,7 +3,10 @@
     --titlebackgroundcolor: rgb(4, 4, 182); 
 }
 
-
+input{
+  height: 3em;
+  font-size: medium;
+}
 body{
     margin: 0;
     display: flex;
@@ -22,13 +25,10 @@ padding: 2em;
 align-self: center;
 text-align: center;
 width: 100%;
+
 }
 
-#InputElement{
-  margin-top: 20%;
-  align-self: center;
-  text-align: center;
-}
+
 #userForm{
   background-color: var(--titlebackgroundcolor);
   display: flex;
@@ -37,6 +37,12 @@ width: 100%;
   border-radius: 1rem;
   border-width: 0.1em;
   border-style: solid;
+  margin-top: 5em;
+
+  text-align: center;
+  align-self: center;
+  margin-left: 10%;
+  margin-right: 10%;
 
 }
 #availableusers{
@@ -45,4 +51,25 @@ width: 100%;
   background-color: var(--titlebackgroundcolor);
   width: 75%;
   align-self: center;
+  border-radius: 1rem;
+  border-width: 0.1em;
+  border-style: solid;
+  padding: 2em;
+}
+.button1,.button2{
+  border: 1em;
+  background-color: var(--titlebackgroundcolor);
+  margin-bottom: 1em;
+  
+  
+ 
+}
+#buttons{
+  align-self: center;
+  width: 25%;
+  margin-top: 1em;
+  text-align: center;
+}
+#buttons a{
+ color: rgb(10, 8, 8);
 }

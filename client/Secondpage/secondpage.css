@@ -19,21 +19,49 @@ body {
 }
 
 #checkOutElement{
-    font-size: large;
+    font-size: x-large;
     padding: 2em;
     align-self: center;
     text-align: center;
     background-color: var(--titlebackgroundcolor);
     margin-top: 5em;
     width: 75%;
+    padding: 2em;
+    border-radius: 1rem;
+  border-width: 0.1em;
+  border-style: solid;
 }
 
 #avaialableBooksElement{
     margin-top: 5em;
     padding: 2em;
-    font-size: large;
+    font-size: x-large;
     align-self: center;
     text-align: center;
     background-color: var(--titlebackgroundcolor);
     width: 75%;
+    padding: 2em;
+    border-radius: 1rem;
+  border-width: 0.1em;
+  border-style: solid;
+}
+#buttons{
+  border: 1em;
+  background-color: var(--titlebackgroundcolor);
+  margin-bottom: 1em;
+  width: 25%;
+  align-self: center;
+  margin-top: 2em;
+  
+  text-align: center;
+  
+ 
+}
+.button{
+text-align: center;
+  width: 25%;
+
+}
+.button a{
+ color: rgb(10, 8, 8);
 }
