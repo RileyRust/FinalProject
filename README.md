@@ -17,44 +17,45 @@ and maybe a static site generator but I am not sure how I would meet these requi
 
 
 part 1 
-    do all of css mastery and html mastery
-    a user can navigate bewteen pages done 
-    store username in local storage <https://www.w3schools.com/jsref/prop_win_localstorage.asp>
+   - [x] some of css mastery and html mastery
+   - [x]  a user can navigate bewteen pages done 
+   - [x] store username in local storage <https://  www.w3schools.com/jsref/prop_win_localstorage.asp>
 
 
 
 part 2 
-a user can be a Libarian 
-libarians can view all books and create books(using API)
-Api Create
+- [x] a user can be a Libarian 
+- [ ] libarians can view all books and create books(using API)
+- [ ] Api Create (dotnet new web)
 
 
 part3 
-users can view and checkout books
-user can see what books they have checked out
-book checkout are stored in the API
+- [ ] users can view and checkout books
+- [ ] user can see what books they have checked out
+- [ ] book checkout are stored in the API
 
 
 
 
 part 4
 
-Librarian can see all book checkouts 
-librarians can check in books(data stored in API)
+- [ ] Librarian can see all book checkouts 
+- [ ] librarians can check in books(data stored in API)
+- [ ] some of css mastery and html mastery
 
 
 
 
 part 5 
-due date assigned when checkout created 
-librarians can see checkout due dates (ordered by soonest due dates)
-Users can see there due date ordered by soonest due date 
-Librarians can see over due books 
-books have waitlists(if we can get to it)
+- [ ] due date assigned when checkout created 
+- [ ] librarians can see checkout due dates (ordered by soonest due dates)
+- [ ] Users can see there due date ordered by soonest due date 
+- [ ] Librarians can see over due books 
+- [ ] books have waitlists(if we can get to it)
 
 
 
 
 part 6 
-Libraians can update books 
-user can recheckout there book (if no waitlist)
+- [ ] Libraians can update books 
+- [ ] user can recheckout there book (if no waitlist)
