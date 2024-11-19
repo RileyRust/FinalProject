@@ -11,19 +11,28 @@
     <section id="titleElement">
       <h1>The Cool Kid Library</h1>
     </section>
+
     <section id="availableusers">
-      <div id="Registeredusers">Users in our system</div>
-      <p>I want to put the users in the system</p>
-      <p>
-        Under the user I want to have a drop down menu where you can see the
-        books the user has <br />
-        [a button that can remove the book if they checked it back in]
-      </p>
-      <p>
-        I am wondering if they could be links to page that would display a
-        picture of the book and the data about the book
-      </p>
+      <div id="UsersInSystem">Users in our system</div>
     </section>
+
+    <section id="availablebooks">
+      <div id="BooksInSystem">Unchecked Books in our system</div>
+    </section>
+
+    <section id="InputElement2">
+      <form id="userForm">
+        <p>Add a new book:</p>
+        <label for="Title">Title:</label>
+        <input type="text" id="Title" required />
+        <label for="Author">Author:</label>
+        <input type="text" id="Author" required />
+        <label for="PrintCompany">Printing Company:</label>
+        <input type="text" id="PrintCompany" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
     <section id="buttons">
       <div class="button1" id="btn">
         <a href="/client/MainPage/mainpage.html">Back</a>

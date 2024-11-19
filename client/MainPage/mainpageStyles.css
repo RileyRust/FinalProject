@@ -45,7 +45,7 @@ width: 100%;
   margin-right: 10%;
 
 }
-#availableusers{
+#UsersInSystem{
   margin-top: 5em;
   text-align: center;
   background-color: var(--titlebackgroundcolor);
@@ -55,6 +55,18 @@ width: 100%;
   border-width: 0.1em;
   border-style: solid;
   padding: 2em;
+}
+#availablebooks{
+  margin-top: 5em;
+  text-align: center;
+  background-color: var(--titlebackgroundcolor);
+  width: 75%;
+  align-self: center;
+  border-radius: 1rem;
+  border-width: 0.1em;
+  border-style: solid;
+  padding: 2em;
+
 }
 .button1,.button2{
   border: 1em;
