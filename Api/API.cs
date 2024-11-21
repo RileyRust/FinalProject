@@ -10,7 +10,7 @@ app.UseCors(c =>
      .AllowAnyMethod()
      .AllowAnyOrigin());
 
-string storageRoot = "./bookStorage";
+string storageRoot = "./bookStorage.json";
 List<Book> books=new();
 
 if(File.Exists(storageRoot))

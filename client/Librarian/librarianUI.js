@@ -1,4 +1,4 @@
-import { getBooks, sendbooktoapi } from "./LibrairianService.js";
+import { getBooks, sendBookToApi } from "./LibrairianService.js";
 
 function attachFormListeners() {
   const formElement = document.getElementById("userForm");
@@ -12,8 +12,8 @@ function attachFormListeners() {
     const title = titleInputElement.value.trim();
     const author = authorInputElement.value.trim();
     const company = companyInputElement.value.trim();
-    const allstuff = title + author + company;
-    await sendbooktoapi(allstuff);
+   
+    await sendBookToApi(title,author,company);
     await renderAllBooks();
   });
 }

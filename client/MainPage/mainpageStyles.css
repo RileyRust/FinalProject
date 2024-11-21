@@ -1,6 +1,8 @@
 :root{
-    --backgroundcolor: rgb(189, 26, 59);
-    --titlebackgroundcolor: rgb(4, 4, 182); 
+    --backgroundcolor: rgb(133, 133, 173);
+    --titlebackgroundcolor: rgb(44, 44, 119); 
+    --textColor: rgb(211, 211, 235); 
+    color: var(--textColor); 
 }
 
 input{
