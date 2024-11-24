@@ -8,7 +8,7 @@ export const sendBookToApi = async (
   const body = {
     author: String(authorValue),
     title: String(titleString),
-    printCompany: String(descriptionValue),
+    description: String(descriptionValue),
     //id: Number(idValue),
   };
 

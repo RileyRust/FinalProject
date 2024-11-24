@@ -4,16 +4,16 @@ function attachFormListeners() {
   const formElement = document.getElementById("userForm");
   const titleInputElement = document.getElementById("Title");
   const authorInputElement = document.getElementById("Author");
-  const companyInputElement = document.getElementById("PrintCompany");
+  const descriptionInputElement = document.getElementById("PrintCompany");
 
   formElement.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const title = titleInputElement.value.trim();
     const author = authorInputElement.value.trim();
-    const company = companyInputElement.value.trim();
+    const description = descriptionInputElement.value.trim();
    
-    await sendBookToApi(title,author,company);
+    await sendBookToApi(title,author,description);
     await renderAllBooks();
   });
 }
@@ -23,13 +23,32 @@ async function renderAllBooks() {
   const allBooks = await getBooks(); 
   bookListelement.replaceChildren();
   for(const book of allBooks){
-    const bookelement = document.createElement("div");
-    bookelement.textContent =  book.title + book.author +book.printCompany;
-    bookListelement.appendChild(bookelement); 
+    if(book.id === null)
+    {
+      const bookelement = document.createElement("div");
+      bookelement.textContent =  "Title: "+ book.title + " Author: " + book.author + "Description: " + book.description;
+      bookListelement.appendChild(bookelement); 
+    }
+
   }
   
 }
+async function renderAllCheckBooks() {
+  const bookListelement = document.getElementById("Checkoutbooks");
+  const allBooks = await getBooks(); 
+  bookListelement.replaceChildren();
+  for(const book of allBooks){
+    if(book.id !== null)
+    {
+      const bookelement = document.createElement("div");
+      bookelement.textContent = "Title: "+ book.title + "User who has it: " + book.id; 
+      bookListelement.appendChild(bookelement); 
 
+    }
+  }
+  
+}
+renderAllCheckBooks();
 attachFormListeners();
 renderAllBooks();
 getBooks();

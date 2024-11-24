@@ -26,7 +26,6 @@ app.MapPost("/books", (Book book) =>
      var json = JsonSerializer.Serialize(books);
     File.WriteAllText(storageRoot, json);
 });
-
 app.Run();
 
-public record Book(String? Id, string Title, string Author, string PrintCompany);
+public record Book(String? Id, string Title, string Author, string Description);

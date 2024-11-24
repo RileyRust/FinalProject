@@ -68,8 +68,41 @@ width: 100%;
   border-width: 0.1em;
   border-style: solid;
   padding: 2em;
+}
+#availablebooks div{
+  width: 25vw;
+  height: 25vh;
+  background-color: var(--backgroundcolor);
+  display: inline-block;
+  margin: 1em;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
 
 }
+#Checkoutbooks{
+  margin-top: 5em;
+  text-align: center;
+  background-color: var(--titlebackgroundcolor);
+  width: 75%;
+  align-self: center;
+  border-radius: 1rem;
+  border-width: 0.1em;
+  border-style: solid;
+  padding: 2em;
+}
+#Checkoutbooks div{
+  width: 25vw;
+  height: 25vh;
+  background-color: var(--backgroundcolor);
+  display: inline-block;
+  margin: 1em;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+
+}
+
 .button1,.button2{
   border: 1em;
   background-color: var(--titlebackgroundcolor);

@@ -25,13 +25,13 @@ part 1
 
 part 2 
 - [x] a user can be a Libarian 
-- [ ] libarians can view all books and create books(using API)
-- [ ] Api Create (dotnet new web)
+- [x] libarians can view all books and create books(using API)
+- [x] Api Create (dotnet new web)
 
 
 part3 
-- [ ] users can view and checkout books
-- [ ] user can see what books they have checked out
+- [x] users can view and checkout books
+- [x] user can see what books they have checked out
 - [ ] book checkout are stored in the API
 
 
@@ -39,9 +39,9 @@ part3
 
 part 4
 
-- [ ] Librarian can see all book checkouts 
+- [X] Librarian can see all book checkouts 
 - [ ] librarians can check in books(data stored in API)
-- [ ] some of css mastery and html mastery
+- [X] some of css mastery and html mastery
 
 
 

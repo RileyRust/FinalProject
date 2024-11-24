@@ -1,12 +1,13 @@
-:root{
-    --backgroundcolor: rgb(189, 26, 59);
-    --titlebackgroundcolor: rgb(4, 4, 182); 
+:root {
+  --backgroundcolor: rgb(133, 133, 173);
+  --titlebackgroundcolor: rgb(44, 44, 119);
+  --textColor: rgb(211, 211, 235);
+  color: var(--textColor);
 }
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   background-color: var(--backgroundcolor);
   font-size: xx-large;
 }
@@ -18,52 +19,82 @@ body {
   width: 100%;
 }
 
-#checkOutElement{
-    font-size: x-large;
-    padding: 2em;
-    align-self: center;
-    text-align: center;
-    background-color: var(--titlebackgroundcolor);
-    margin-top: 5em;
-    width: 75%;
-    padding: 2em;
-    border-radius: 1rem;
+#checkOutElement {
+  width: 100vw;
+  height: 50vh;
+  margin-top: 5em;
+  align-self: center;
+  background-color: var(--titlebackgroundcolor);
+  border-radius: 1rem;
   border-width: 0.1em;
   border-style: solid;
+  overflow: scroll;
+  overflow-y: scroll;
+  align-content: normal;
+}
+#checkOutElement div {
+  height: 60%;
+  width: 15%;
+  background-color: var(--backgroundcolor);
+  display: inline-block;
+  margin: 1em;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+
+}
+#checkOutElement h3{
+  background-color: var(--titlebackgroundcolor);
+  align-self: center;
+  text-align: center;
+
 }
 
-#avaialableBooksElement{
-    margin-top: 5em;
-    padding: 2em;
-    font-size: x-large;
-    align-self: center;
-    text-align: center;
-    background-color: var(--titlebackgroundcolor);
-    width: 75%;
-    padding: 2em;
-    border-radius: 1rem;
+#avaialableBooksElement {
+  height: 50vh;
+  width: 100vw;
+  margin-top: 5em;
+  align-self: center;
+  background-color: var(--titlebackgroundcolor);
+  border-radius: 1rem;
   border-width: 0.1em;
   border-style: solid;
+  overflow: scroll;
+  overflow-y: scroll;
 }
-#buttons{
+#avaialableBooksElement div {
+  height: 60%;
+  width: 15%;
+  background-color: var(--backgroundcolor);
+  display: inline-block;
+  margin: 1em;
+  overflow: scroll;
+  overflow-y: scroll;
+}
+#avaialableBooksElement h3{
+  background-color: var(--titlebackgroundcolor);
+  align-self: center;
+  text-align: center;
+
+}
+
+
+#buttons {
   border: 1em;
   background-color: var(--titlebackgroundcolor);
   margin-bottom: 1em;
   width: 25%;
   align-self: center;
   margin-top: 2em;
-  
-  text-align: center;
-  
- 
-}
-.button{
-text-align: center;
-  width: 25%;
 
+  text-align: center;
 }
-.button a{
- color: rgb(10, 8, 8);
+.button {
+  text-align: center;
+  width: 25%;
+}
+.button a {
+  color: rgb(10, 8, 8);
 }
 .book {
   margin-bottom: 10px;
@@ -85,12 +116,4 @@ text-align: center;
 
 .book button:hover {
   background-color: #0056b3;
-}
-
-#searchInput {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
