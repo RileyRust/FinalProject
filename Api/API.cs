@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,4 +29,4 @@ app.MapPost("/books", (Book book) =>
 });
 app.Run();
 
-public record Book(String? Id, string Title, string Author, string Description);
+public record Book(String? Id, string Title, string Author, string Description, string Cover);

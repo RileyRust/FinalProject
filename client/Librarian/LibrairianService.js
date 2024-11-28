@@ -3,12 +3,14 @@ const apiAddress = "http://localhost:5038";
 export const sendBookToApi = async (
   titleString,
   authorValue,
-  descriptionValue
+  descriptionValue,
+  coverImage
 ) => {
   const body = {
     author: String(authorValue),
     title: String(titleString),
     description: String(descriptionValue),
+    cover: String(coverImage),
     //id: Number(idValue),
   };
 
