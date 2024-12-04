@@ -32,9 +32,10 @@ export const getBooks = async () => {
 
   return response.json();
 };
-export const CheckedBy = async (bookId, checkedByValue) => {
+export const CheckedBy = async (bookId, checkedByValue,checkedTimeValue ) => {
   const body = {
-      checkedBy: checkedByValue 
+      checkedBy: checkedByValue,
+      checkedTime: checkedTimeValue
   };
 
   await fetch(`${apiAddress}/books/${bookId}`, {

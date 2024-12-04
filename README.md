@@ -47,9 +47,9 @@ part 4
 
 
 part 5 
-- [ ] due date assigned when checkout created 
-- [ ] librarians can see checkout due dates (ordered by soonest due dates)
-- [ ] Users can see there due date ordered by soonest due date 
+- [x] due date assigned when checkout created 
+- [x] librarians can see checkout due dates (ordered by soonest due dates)
+- [x] Users can see there due date ordered by soonest due date 
 - [ ] Librarians can see over due books 
 
 

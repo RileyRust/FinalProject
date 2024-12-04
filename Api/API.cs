@@ -36,7 +36,7 @@ app.MapPut("/books/{id}", (string id, CheckOutBody body ) =>
 {
     var book = books.FirstOrDefault(b => b.Id == id);
 
-    book = book with { CheckedBy = body.CheckedBy };
+    book = book with { CheckedBy = body.CheckedBy, CheckedTime = body.CheckedTime};
     books = books.Select(b => b.Id == id ? book : b).ToList();
     var json = JsonSerializer.Serialize(books, new JsonSerializerOptions
     {
@@ -49,5 +49,5 @@ app.MapPut("/books/{id}", (string id, CheckOutBody body ) =>
 
 app.Run();
 
-public record Book( string? Id, string Title, string Author, string Description, string Cover,  String? CheckedBy);
-public record CheckOutBody(string? CheckedBy); 
+public record Book( string? Id, string Title, string Author, string Description, string Cover,  String? CheckedBy, String CheckedTime);
+public record CheckOutBody(String? CheckedBy, String CheckedTime ); 

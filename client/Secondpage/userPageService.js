@@ -32,16 +32,22 @@ export const sendBookToApi = async (
   });
 };
 
-export const CheckedBy = async (bookId, checkedByValue) => {
+export const CheckedBy = async (
+  bookId,
+   checkedByValue,
+   checkedTimeValue
+  ) => {
   const body = {
-      checkedBy: checkedByValue 
+      checkedBy: checkedByValue,
+      checkedTime: checkedTimeValue
+
   };
 
   await fetch(`${apiAddress}/books/${bookId}`, {
       method: "PUT",
+      body: JSON.stringify(body),
       headers: {
           "Content-Type": "application/json",
       },
-      body: JSON.stringify(body),
   });
 };

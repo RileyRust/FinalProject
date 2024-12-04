@@ -32,15 +32,10 @@ body {
   overflow-y: scroll;
   align-content: normal;
 }
-#checkOutElement div {
-  height: 60%;
-  width: 15%;
-  background-color: var(--backgroundcolor);
-  display: inline-block;
-  margin: 1em;
-  word-wrap: break-word;
-  white-space: pre-wrap;
-  word-break: break-word;
+#checkOutElement h3 {
+  background-color: var(--titlebackgroundcolor);
+  align-self: center;
+  text-align: center;
 
 }
 #checkOutElement h3{
@@ -78,8 +73,6 @@ body {
   background-color: var(--titlebackgroundcolor);
   align-self: center;
   text-align: center;
-  /* display: flex;
-  flex-direction: column; */
 
 }
 
@@ -112,8 +105,6 @@ body {
 }
 .cardElement{
   opacity: 0;
-  /* width: 100%; */
-  /* width: 400px; */
 }
 .cardElement:hover{
 opacity: 100;
@@ -138,4 +129,7 @@ opacity: 100;
 }
 .cards{
   width: 450px; 
+}
+.overdue{
+  background-color: red ;
 }
