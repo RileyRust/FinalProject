@@ -20,13 +20,34 @@ if(File.Exists(storageRoot))
     books.AddRange(JsonSerializer.Deserialize<List<Book>>(json));
 }
 
-app.MapGet("/books", () => books);
+app.MapGet("/books", () =>
+{
+    return Results.Ok(books);
+});
+
 app.MapPost("/books", (Book book) =>
 {
     books.Add(book); 
      var json = JsonSerializer.Serialize(books);
     File.WriteAllText(storageRoot, json);
 });
+
+app.MapPut("/books/{id}", (string id, CheckOutBody body ) =>
+{
+    var book = books.FirstOrDefault(b => b.Id == id);
+
+    book = book with { CheckedBy = body.CheckedBy };
+    books = books.Select(b => b.Id == id ? book : b).ToList();
+    var json = JsonSerializer.Serialize(books, new JsonSerializerOptions
+    {
+        WriteIndented = true
+    });
+    File.WriteAllText(storageRoot, json);
+
+    return Results.Ok(book);
+});
+
 app.Run();
 
-public record Book(String? Id, string Title, string Author, string Description, string Cover);
+public record Book( string? Id, string Title, string Author, string Description, string Cover,  String? CheckedBy);
+public record CheckOutBody(string? CheckedBy); 

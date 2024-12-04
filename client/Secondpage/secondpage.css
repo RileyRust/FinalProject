@@ -62,22 +62,26 @@ body {
   overflow: scroll;
   overflow-y: scroll;
 }
-#avaialableBooksElement div {
-  height: 60%;
-  width: 15%;
-  background-color: var(--backgroundcolor);
-  display: inline-block;
-  margin: 1em;
+.grandparent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
   overflow: scroll;
   overflow-y: scroll;
+  position: relative;
+  margin: 10px;
+  
 }
+
 #avaialableBooksElement h3{
   background-color: var(--titlebackgroundcolor);
   align-self: center;
   text-align: center;
+  /* display: flex;
+  flex-direction: column; */
 
 }
-
 
 #buttons {
   border: 1em;
@@ -88,6 +92,34 @@ body {
   margin-top: 2em;
 
   text-align: center;
+}
+.parent {
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+  height: 500px;
+  align-self: center;
+  background-color: var(--titlebackgroundcolor);
+  position: relative;
+}
+.parent div{
+  height: 100%;
+  background-color: var(--backgroundcolor);
+  margin: 1em;
+  overflow: scroll;
+  overflow-y: scroll;
+  position:absolute;
+}
+.cardElement{
+  opacity: 0;
+  /* width: 100%; */
+  /* width: 400px; */
+}
+.cardElement:hover{
+opacity: 100;
+}
+.imageDiv img{
+ width: 100%;;
 }
 .button {
   text-align: center;
@@ -104,16 +136,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-.book button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.book button:hover {
-  background-color: #0056b3;
+.cards{
+  width: 450px; 
 }

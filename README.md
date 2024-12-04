@@ -32,7 +32,7 @@ part 2
 part3 
 - [x] users can view and checkout books
 - [x] user can see what books they have checked out
-- [ ] book checkout are stored in the API
+- [x] book checkout are stored in the API //help
 
 
 
@@ -40,7 +40,7 @@ part3
 part 4
 
 - [X] Librarian can see all book checkouts 
-- [ ] librarians can check in books(data stored in API)
+- [x] librarians can check in books(data stored in API) //help
 - [X] some of css mastery and html mastery
 
 
@@ -51,11 +51,9 @@ part 5
 - [ ] librarians can see checkout due dates (ordered by soonest due dates)
 - [ ] Users can see there due date ordered by soonest due date 
 - [ ] Librarians can see over due books 
-- [ ] books have waitlists(if we can get to it)
 
 
 
 
 part 6 
 - [ ] Libraians can update books 
-- [ ] user can recheckout there book (if no waitlist)
