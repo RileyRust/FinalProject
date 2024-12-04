@@ -71,10 +71,12 @@ async function renderAllCheckBooks() {
     const d = new Date();
     let month = d.getMonth() + 1;
     let date = d.getDate();
+    let year = d.getFullYear(); 
     dateChecked.textContent = `Due on ` + (Number(datesplit[1]) + 7);
     if (
       month > Number(datesplit[0]) ||
-      (month === Number(datesplit[0]) && date >= Number(datesplit[1]))
+      (month === Number(datesplit[0]) && date >= Number(datesplit[1]) + 7) ||
+      year > Number(datesplit[2])
     ) {
       dateChecked.classList.add("overdue");
     }
@@ -88,7 +90,7 @@ async function renderAllCheckBooks() {
     bookelement.addEventListener("submit", async (e) => {
       e.preventDefault();
 
-      await CheckedBy(checkedOutBooks.id, null, null);
+      await CheckedBy(book.id, null, null);
       await renderAllBooks();
       await renderAllCheckBooks();
     });

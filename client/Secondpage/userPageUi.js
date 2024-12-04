@@ -61,11 +61,12 @@ async function renderAllBooks() {
         const bigdate = new Date();
         const date = bigdate.getDate();
         const month = bigdate.getMonth() + 1;
+        const year = bigdate.getFullYear(); 
         e.preventDefault();
         await CheckedBy(
           book.id,
           username,
-          `${month}/${date}`
+          `${month}/${date}/${year}`
         );
         await renderAllBooks();
         await renderAllCheckBooks();
@@ -131,11 +132,12 @@ async function renderAllCheckBooks() {
     let date = d.getDate();
     let year = d.getFullYear();
     dateChecked.textContent = `Due on ` + (Number(datesplit[1]) + 7);
-    console.log(book.checkedTime);
-    console.log(month);
+    console.log(datesplit);
     if (
       month > Number(datesplit[0]) ||
-      (month === Number(datesplit[0]) && date >= Number(datesplit[1]) + 7)
+      (month === Number(datesplit[0]) && date >= Number(datesplit[1]) + 7) ||
+      year > Number(datesplit[2])
+
     ) {
       dateChecked.classList.add("overdue");
     }
