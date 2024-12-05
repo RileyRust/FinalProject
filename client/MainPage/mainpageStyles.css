@@ -90,16 +90,19 @@ width: 100%;
   border-width: 0.1em;
   border-style: solid;
   padding: 2em;
+ 
+  flex-direction: row;
+  display: flex;
 }
 #Checkoutbooks div{
-  width: 25vw;
   height: 25vh;
   background-color: var(--backgroundcolor);
   display: inline-block;
-  margin: 1em;
+
   word-wrap: break-word;
   white-space: pre-wrap;
   word-break: break-word;
+
 
 }
 
@@ -122,11 +125,16 @@ width: 100%;
 }
 .formElement{
   background-color:var(--backgroundcolor) ;
+  margin: 1em;
 }
 .formElement button{
   width: 8vw;
   height: 5vh;
+  
 }
 .overdue{
   background-color: red ;
+}
+.formElement{
+  width: 25%;
 }

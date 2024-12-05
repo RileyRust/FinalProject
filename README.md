@@ -50,7 +50,7 @@ part 5
 - [x] due date assigned when checkout created 
 - [x] librarians can see checkout due dates (ordered by soonest due dates)
 - [x] Users can see there due date ordered by soonest due date 
-- [ ] Librarians can see over due books 
+- [x] Librarians can see over due books 
 
 
 

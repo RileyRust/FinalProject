@@ -7,7 +7,7 @@ async function renderAllBooks() {
   const allBooks = await getBooks();
   bookListelement.replaceChildren();
   const headerElement = document.createElement("h3");
-  const headerDiv = document.createElement("div");
+  const headerDiv = document.createElement("nav");
   headerDiv.appendChild(headerElement);
   headerElement.textContent = "Available Books";
   bookListelement.appendChild(headerElement);

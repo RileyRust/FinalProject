@@ -13,7 +13,7 @@ function attachFormListeners() {
     const author = authorInputElement.value.trim();
     const description = descriptionInputElement.value.trim();
     const coverImage = coverImageInputElement.value.trim();
-
+    document.getElementById("userForm").reset()
     await sendBookToApi(title, author, description, coverImage, number);
     await renderAllBooks();
   });
@@ -26,14 +26,16 @@ async function renderAllBooks() {
   for (const book of allBooks) {
     if (book.checkedBy === null) {
       const bookelement = document.createElement("div");
-
-      bookelement.textContent =
-        "Title: " +
-        book.title +
-        " Author: " +
-        book.author +
-        "Description: " +
-        book.description;
+      bookelement.classList.add("cards")
+      const title = document.createElement("p")
+      title.textContent = "Title: " + book.title; 
+      const author = document.createElement("p")
+      author.textContent = " Author: " + book.author
+      const description = document.createElement("p")
+      description.textContent = "Description: " +book.description;
+      bookelement.appendChild(title)
+      bookelement.appendChild(author)
+      bookelement.appendChild(description)
 
       bookListelement.appendChild(bookelement);
     }
@@ -57,7 +59,7 @@ async function renderAllCheckBooks() {
     const booktitle = document.createElement("p");
     booktitle.textContent = book.title;
     const checkedtime = document.createElement("p");
-    checkedtime.textContent = "Checked out on" + book.checkedTime;
+    checkedtime.textContent = "Checked by " + book.checkedBy + " on " + book.checkedTime;
     const userchecked = document.createElement("P");
     userchecked.textContent = book.checkedBy;
 
