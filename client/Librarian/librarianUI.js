@@ -21,26 +21,45 @@ function attachFormListeners() {
 
 async function renderAllBooks() {
   const bookListelement = document.getElementById("availablebooks");
+  const filterBar = document.getElementById("filterBar"); 
   const allBooks = await getBooks();
-  bookListelement.replaceChildren();
-  for (const book of allBooks) {
-    if (book.checkedBy === null) {
+
+  const filterAndRenderBooks = (filter = "") => {
+    bookListelement.replaceChildren();
+
+    const filteredBooks = allBooks
+      .filter((book) => book.checkedBy === null)
+      .filter(
+        (book) =>
+          book.title.toLowerCase().includes(filter.toLowerCase()) ||
+          book.author.toLowerCase().includes(filter.toLowerCase())
+      ); 
+
+    for (const book of filteredBooks) {
       const bookelement = document.createElement("div");
-      bookelement.classList.add("cards")
-      const title = document.createElement("p")
-      title.textContent = "Title: " + book.title; 
-      const author = document.createElement("p")
-      author.textContent = " Author: " + book.author
-      const description = document.createElement("p")
-      description.textContent = "Description: " +book.description;
-      bookelement.appendChild(title)
-      bookelement.appendChild(author)
-      bookelement.appendChild(description)
+      bookelement.classList.add("cards");
+      const title = document.createElement("p");
+      title.textContent = "Title: " + book.title;
+      const author = document.createElement("p");
+      author.textContent = "Author: " + book.author;
+      const description = document.createElement("p");
+      description.textContent = "Description: " + book.description;
+
+      bookelement.appendChild(title);
+      bookelement.appendChild(author);
+      bookelement.appendChild(description);
 
       bookListelement.appendChild(bookelement);
     }
-  }
+  };
+
+  filterBar.addEventListener("input", (e) => {
+    const filter = e.target.value;
+    filterAndRenderBooks(filter);
+  });
+  filterAndRenderBooks();
 }
+
 async function renderAllCheckBooks() {
   const bookListelement = document.getElementById("Checkoutbooks");
   const allBooks = await getBooks();

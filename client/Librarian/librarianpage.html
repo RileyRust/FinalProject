@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/MainPage/mainpageStyles.css"/>
+    <link rel="stylesheet" href="/MainPage/mainpageStyles.css" />
     <script type="module" src="/Librarian/librarianUI.js"></script>
     <title>Document</title>
   </head>
 
-
   <body>
+
     <section id="titleElement">
       <h1>The Cool Kid Library</h1>
     </section>
+    
 
     <section id="Checkoutbooks">
-      <div id="UsersInSystem"> in our system</div>
+      <div id="UsersInSystem">in our system</div>
     </section>
 
     <section id="availablebooks">
       <div id="BooksInSystem">Unchecked Books in our system</div>
     </section>
+
+    <div id="filter-container">
+      <input
+        type="text"
+        id="filterBar"
+        placeholder="Search by Author..."
+        aria-label="Filter books by name"
+      />
+    </div>
 
     <section id="InputElement2">
       <form id="userForm">
@@ -35,7 +43,9 @@
         <input type="text" id="PrintCompany" required />
         <label for="coverImage">Cover Image</label>
         <input type="text" id="coverImage" required />
-        <button type="submit">Submit</button>
+        <label for="vol">Volume (between 0 and 50):</label>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
       </form>
     </section>
 
@@ -44,5 +54,6 @@
         <a href="/MainPage/mainpage.html">Back</a>
       </div>
     </section>
+    
   </body>
 </html>

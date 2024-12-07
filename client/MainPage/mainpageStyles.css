@@ -8,6 +8,7 @@
 input{
   height: 3em;
   font-size: medium;
+  font-style:oblique;
 }
 body{
     margin: 0;
@@ -16,7 +17,7 @@ body{
   height: 100vh;
   background-color: var(--backgroundcolor); 
   font-size: xx-large;
-
+  font-style:oblique;
 
 }
 
@@ -27,7 +28,7 @@ padding: 2em;
 align-self: center;
 text-align: center;
 width: 100%;
-
+font-style:oblique;
 }
 
 
@@ -40,7 +41,7 @@ width: 100%;
   border-width: 0.1em;
   border-style: solid;
   margin-top: 5em;
-
+  font-style:oblique;
   text-align: center;
   align-self: center;
   margin-left: 10%;
@@ -57,6 +58,7 @@ width: 100%;
   border-width: 0.1em;
   border-style: solid;
   padding: 2em;
+  font-style:oblique;
 }
 #availablebooks{
   margin-top: 5em;
@@ -68,6 +70,7 @@ width: 100%;
   border-width: 0.1em;
   border-style: solid;
   padding: 2em;
+  font-style:oblique;
 }
 #availablebooks div{
   width: 25vw;
@@ -78,6 +81,7 @@ width: 100%;
   word-wrap: break-word;
   white-space: pre-wrap;
   word-break: break-word;
+  font-style:oblique;
 
 }
 #Checkoutbooks{
@@ -90,7 +94,7 @@ width: 100%;
   border-width: 0.1em;
   border-style: solid;
   padding: 2em;
- 
+  font-style:oblique;
   flex-direction: row;
   display: flex;
 }
@@ -98,7 +102,7 @@ width: 100%;
   height: 25vh;
   background-color: var(--backgroundcolor);
   display: inline-block;
-
+  font-style:oblique;
   word-wrap: break-word;
   white-space: pre-wrap;
   word-break: break-word;
@@ -110,7 +114,7 @@ width: 100%;
   border: 1em;
   background-color: var(--titlebackgroundcolor);
   margin-bottom: 1em;
-  
+  font-style:oblique;
   
  
 }
@@ -119,22 +123,58 @@ width: 100%;
   width: 25%;
   margin-top: 1em;
   text-align: center;
+  font-style:oblique;
 }
 #buttons a{
- color: rgb(10, 8, 8);
+ color:var(--textColor);
+ font-style:oblique;
 }
 .formElement{
   background-color:var(--backgroundcolor) ;
   margin: 1em;
+  font-style:oblique;
 }
 .formElement button{
   width: 8vw;
   height: 5vh;
-  
+  font-style:oblique;
 }
 .overdue{
   background-color: red ;
+  font-style:oblique;
 }
 .formElement{
   width: 25%;
+  font-style:oblique;
+}
+#ListElement{
+  background-color:var(--titlebackgroundcolor); 
+  color:var(--textColor);
+  font-style:oblique;
+  align-self: center;
+  width: 50%;
+  
+}
+#FigElement
+{
+  align-self: center;
+width: 10vh; 
+}
+#filter-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#filterBar {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#filterBar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }

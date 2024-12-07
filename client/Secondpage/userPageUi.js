@@ -14,6 +14,7 @@ async function renderAllBooks() {
   const grandParentElement = document.createElement("div");
   grandParentElement.classList.add("grandparent");
 
+
   for (const book of allBooks) {
     if (book.checkedBy === null) {
       const ImageElement = document.createElement("img");
